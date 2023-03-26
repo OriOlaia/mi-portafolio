@@ -1,100 +1,57 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
-    background-image: url(/img/IMG_6433.JPG);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-    color: #FFF; 
-    font-family: 'Roboto Serif', sans-serif; 
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    font-family: 'Kanit', sans-serif;
 }
 
-header{
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top: 0;
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(52, 17, 85);
+    color: #fff;
+}
+
+.navbar{
     display: flex;
     justify-content: space-between;
-    
+    padding: 2em;
+}
+.brand{
+    margin-top: -7px;
 }
 
-header h1{
+.brand span{
+    color: lightskyblue;
+
+}
+
+.menu{
     display: flex;
-    align-items: center;
-    margin: 0;
-    
-}
-.menu ul{
-    list-style: none;
-    display: flex;
-    margin: 0;
+    width: 50%;
+    justify-content: space-around;
 }
 
-.menu li a{
-    color: #FFF;
-    text-decoration: none;
-    display: block;
-    padding: 20px;
-}
-
-
-.inicio{
-    color: black;
-    display: flex;
-    align-items: center;
-}
-.inicio div{
-    text-align: center;
-    margin-left: 150px;
-}
-.sobre{
-    background-color: rgb(29, 0, 66);
-    padding: 20px;
-    text-align: center;
-    
-}
-
-.sobre img{
-    height: 500px;
-    margin: auto;
-}
-
-.skill{
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 20px;
-}
-
-.progress{
-    width: 750px;
-}
-
-.proyectos{
-    background: rgb(128, 229, 255);
-}
-
-footer{
-    background: rgba(0, 0, 0, 0.9);
-    position: absolute;
-    bottom: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.social{
-    text-align: center;
-}
-.social ul{
-    display: flex;
+.menu li {
     list-style: none;
 }
-.social li{
-    padding: 10px;
-}
-.social a{
+
+.menu a {
+    color: #fff;
     text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu .active{
+    color: aquamarine;
+}
+
+.menu a:hover{
+    background-color: white;
+    color: blueviolet;
+    transition: ease-in .4s;
 }
