@@ -1,0 +1,14 @@
+body{
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    background: url(../img/conejito-estrella.jpg) ;
+    background-size: cover;  
+}
+.wrap{
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(6px);
+    position: absolute;
+    z-index: -1;
+}

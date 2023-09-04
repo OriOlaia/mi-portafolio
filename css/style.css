@@ -1,57 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 body{
-    font-family: 'Kanit', sans-serif;
+    background-image: url(/img/IMG_6433.JPG);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    color: #FFF; 
+    font-family: 'Roboto Serif', sans-serif; 
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
-.wrapper{
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(52, 17, 85);
-    color: #fff;
-}
-
-.navbar{
+header{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
-    padding: 2em;
-}
-.brand{
-    margin-top: -7px;
+    
 }
 
-.brand span{
-    color: lightskyblue;
-
-}
-
-.menu{
+header h1{
     display: flex;
-    width: 50%;
-    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
 }
 
-.menu li {
+.menu li a{
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+
+
+.inicio{
+    color: black;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.inicio div{
+    text-align: center;
+    margin-left: 150px;
+}
+.cuerpo{
+    background-color: rgb(29, 0, 66);
+    padding: 20px;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    
+    
+}
+
+.cuerpo img{
+    height: 500px;
+    margin: auto;
+}
+
+
+footer{
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    bottom: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90.8vh;
+    width: 100%;
+}
+.social{
+    text-align: center;
+}
+.social ul{
+    display: flex;
     list-style: none;
 }
-
-.menu a {
-    color: #fff;
+.social li{
+    padding: 10px;
+}
+.social a{
     text-decoration: none;
-    padding: 10px 20px;
-}
-
-.menu .active{
-    color: aquamarine;
-}
-
-.menu a:hover{
-    background-color: white;
-    color: blueviolet;
-    transition: ease-in .4s;
 }
